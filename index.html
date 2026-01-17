@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal Berita Indonesia - Berita terbaru, terupdate, dan terpercaya dari seluruh pelosok nusantara.">
+    <meta name="keywords" content="Berita Indonesia, Berita Terbaru, Politik, Ekonomi, Tekno, Hiburan">
+    <title>PORTAL BERITA INDONESIA | Terupdate & Terpercaya</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #e74c3c;
+            --dark-color: #2c3e50;
+            --light-bg: #f4f4f4;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+
+        header {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 4px solid var(--primary-color);
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--dark-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background: var(--dark-color);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            padding: 0 15px;
+        }
+
+        /* Berita Utama */
+        .main-news {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        article {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        article img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        article h2 {
+            margin: 15px 0;
+            font-size: 1.8rem;
+            color: var(--dark-color);
+        }
+
+        .meta {
+            font-size: 0.8rem;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .category-tag {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 3px 10px;
+            border-radius: 3px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+        }
+
+        /* Sidebar */
+        aside {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            height: fit-content;
+        }
+
+        aside h3 {
+            border-bottom: 2px solid var(--primary-color);
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+
+        .trending-item {
+            display: flex;
+            margin-bottom: 15px;
+            gap: 10px;
+        }
+
+        .trending-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+
+        .trending-item h4 {
+            font-size: 0.9rem;
+            line-height: 1.2;
+        }
+
+        footer {
+            background: var(--dark-color);
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            article img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PORTAL BERITA INDONESIA</h1>
+        <p>Menyajikan Kabar Akurat dari Sabang sampai Merauke</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">NASIONAL</a></li>
+            <li><a href="#">EKONOMI</a></li>
+            <li><a href="#">TEKNO</a></li>
+            <li><a href="#">OLAHRAGA</a></li>
+            <li><a href="#">HIBURAN</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main class="main-news">
+            
+            <article>
+                <span class="category-tag">Nasional</span>
+                <h2>Pembangunan IKN Masuk Tahap Finalisasi Infrastruktur Dasar</h2>
+                <div class="meta">Diposting pada: 17 Januari 2026 | Oleh: Redaksi Utama</div>
+                <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&w=800&q=80" alt="Pembangunan IKN">
+                <p>Pemerintah melaporkan bahwa progres pembangunan Ibu Kota Nusantara (IKN) kini telah mencapai tahap signifikan. Infrastruktur air minum dan kelistrikan berbasis energi terbarukan mulai diuji coba...</p>
+                <a href="#">Baca Selengkapnya...</a>
+            </article>
+
+            <article>
+                <span class="category-tag">Ekonomi</span>
+                <h2>Harga Pangan Stabil Menjelang Kuartal Pertama 2026</h2>
+                <div class="meta">Diposting pada: 17 Januari 2026 | Oleh: Tim Ekonomi</div>
+                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80" alt="Pasar Tradisional">
+                <p>Menteri Perdagangan menyatakan bahwa stok bahan pangan nasional dalam kondisi aman. Kerja sama antar daerah diperkuat untuk menekan biaya logistik distribusi beras dan cabai...</p>
+                <a href="#">Baca Selengkapnya...</a>
+            </article>
+
+            <article>
+                <span class="category-tag">Teknologi</span>
+                <h2>Startup Indonesia Luncurkan Satelit Mikro untuk Pemantauan Hutan</h2>
+                <div class="meta">Diposting pada: 16 Januari 2026 | Oleh: Tekno News</div>
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="Teknologi Satelit">
+                <p>Sebuah konsorsium startup teknologi asal Jakarta berhasil meluncurkan satelit mikro yang didesain khusus untuk mendeteksi titik api secara real-time di hutan Kalimantan dan Sumatra...</p>
+                <a href="#">Baca Selengkapnya...</a>
+            </article>
+
+        </main>
+
+        <aside>
+            <h3>BERITA POPULER</h3>
+            
+            <div class="trending-item">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=150&q=80" alt="Olahraga">
+                <div>
+                    <h4>Timnas Indonesia Melaju ke Final Piala Asia 2026</h4>
+                </div>
+            </div>
+
+            <div class="trending-item">
+                <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=150&q=80" alt="Kurs Rupiah">
+                <div>
+                    <h4>Rupiah Menguat Terhadap Dolar AS Pagi Ini</h4>
+                </div>
+            </div>
+
+            <div class="trending-item">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=150&q=80" alt="Konser Musik">
+                <div>
+                    <h4>Konser Musik Internasional Akan Digelar di Borobudur</h4>
+                </div>
+            </div>
+
+            <div style="margin-top: 30px; background: #eee; padding: 15px; text-align: center;">
+                <p>IKLAN DISINI</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PORTAL BERITA INDONESIA. Seluruh Hak Cipta Dilindungi.</p>
+        <p>Kontak Kami | Redaksi | Pedoman Siber</p>
+    </footer>
+
+</body>
+</html>
